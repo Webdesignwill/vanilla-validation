@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Literals</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <style type="text/css">
+    	input {
+    		border:1px solid #DDD;
+    		padding:8px 0 8px 0;
+    		margin:0 0 12px 0;
+    		text-indent:10px;
+    		width:100%;
+    	}
+    	label {
+    		display:block;
+    		width:100%;
+    		min-height:20px;
+    	}
+    	.personal-details {
+    		width:500px;
+				margin: 50px auto 25px auto;
+    	}
+    	.valid input {
+    		border:1px solid green;
+    	}
+    	.valid .message {
+    		color:green;
+				text-indent: 12px;
+    	}
+    	.invalid input {
+    		border:1px solid red;
+    	}
+    	.invalid .message {
+    		color:red;
+    	}
+    	.submit {
+				background: none;
+				border: none;
+				background-color: #EEE;
+				border: 1px solid #DDD;
+				padding: 10px 15px;
+    	}
+    	.debugging {
+    		width:500px;
+				margin: 25px auto 0 auto;
+    	}
+    </style>
+
+  </head>
+  <body>
+  	<form class="personal-details">
+	    <div class="group">
+	    	<label class="message"></label>
+	      <input type="text" name="firstName" placeholder="First name">
+	    </div>
+	    <div class="group">
+	    	<label class="message"></label>
+	      <input type="text" name="lastName" placeholder="Last name">
+	    </div>
+	    <div class="group">
+	    	<label class="message"></label>
+	      <input type="text" name="email" placeholder="Email">
+	    </div>
+	    <div class="group">
+	    	<label class="message"></label>
+	      <input type="text" name="phone" placeholder="Phone">
+	    </div>
+	    <button type="submit" class="submit">Save</button>
+	  </form>
+	  <hr />
+	  <ul class="debugging"></li>
+  </body>
+</html>
